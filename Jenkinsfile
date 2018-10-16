@@ -22,7 +22,7 @@ pipeline {
         stage('Build Java App') {
             steps {
                 container('jdk') {
-                    withMaven(globalMavenSettingsConfig: 'repo.core.latombe.fr', mavenOpts: '-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn') {
+                    withMaven(globalMavenSettingsConfig: 'repo.core.latombe.fr') {
                         sh './mvnw clean verify'
                     }
                 }
