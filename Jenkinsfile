@@ -16,10 +16,10 @@ pipeline {
                     containers:
                     - name: jnlp
                     - name: jdk
-                    image: openjdk:8-jdk
-                    command:
-                    - cat
-                    tty: true
+                      image: openjdk:8-jdk
+                      command:
+                      - cat
+                      tty: true
                 """
                         } // kubernetes
                     } // agent
@@ -40,10 +40,10 @@ pipeline {
                     containers:
                     - name: jnlp
                     - name: jdk
-                    image: openjdk:8-jdk-alpine
-                    command:
-                    - cat
-                    tty: true
+                      image: openjdk:8-jdk-alpine
+                      command:
+                      - cat
+                      tty: true
                 """
                         } // kubernetes
                     } // agent
@@ -64,10 +64,10 @@ pipeline {
                     containers:
                     - name: jnlp
                     - name: jdk
-                    image: fabric8/java-centos-openjdk8-jdk
-                    command:
-                    - cat
-                    tty: true
+                      image: fabric8/java-centos-openjdk8-jdk
+                      command:
+                      - cat
+                      tty: true
                 """
                         } // kubernetes
                     } // agent
