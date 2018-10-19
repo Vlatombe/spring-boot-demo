@@ -12,14 +12,14 @@ pipeline {
                         kubernetes {
                             label 'demo-spring-boot-debian'
                             yaml """
-                spec:
-                    containers:
-                    - name: jnlp
-                    - name: jdk
-                      image: openjdk:8-jdk
-                      command:
-                      - cat
-                      tty: true
+spec:
+    containers:
+    - name: jnlp
+    - name: jdk
+      image: openjdk:8-jdk
+      command:
+      - cat
+      tty: true
                 """
                         } // kubernetes
                     } // agent
@@ -36,14 +36,14 @@ pipeline {
                         kubernetes {
                             label 'demo-spring-boot-alpine'
                             yaml """
-                spec:
-                    containers:
-                    - name: jnlp
-                    - name: jdk
-                      image: openjdk:8-jdk-alpine
-                      command:
-                      - cat
-                      tty: true
+spec:
+  containers:
+  - name: jnlp
+  - name: jdk
+    image: openjdk:8-jdk-alpine
+    command:
+    - cat
+    tty: true
                 """
                         } // kubernetes
                     } // agent
@@ -60,14 +60,14 @@ pipeline {
                         kubernetes {
                             label 'demo-spring-boot-centos'
                             yaml """
-                spec:
-                    containers:
-                    - name: jnlp
-                    - name: jdk
-                      image: fabric8/java-centos-openjdk8-jdk
-                      command:
-                      - cat
-                      tty: true
+spec:
+  containers:
+  - name: jnlp
+  - name: jdk
+    image: fabric8/java-centos-openjdk8-jdk
+    command:
+    - cat
+    tty: true
                 """
                         } // kubernetes
                     } // agent
