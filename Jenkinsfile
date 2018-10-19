@@ -14,7 +14,6 @@ pipeline {
                             yaml """
 spec:
     containers:
-    - name: jnlp
     - name: jdk
       image: openjdk:8-jdk
       command:
@@ -38,7 +37,6 @@ spec:
                             yaml """
 spec:
   containers:
-  - name: jnlp
   - name: jdk
     image: openjdk:8-jdk-alpine
     command:
@@ -62,7 +60,6 @@ spec:
                             yaml """
 spec:
   containers:
-  - name: jnlp
   - name: jdk
     image: fabric8/java-centos-openjdk8-jdk
     command:
