@@ -26,6 +26,8 @@ pipeline {
                     steps {
                         container('jdk') {
                                 sh './mvnw clean verify'
+                                sh 'curl -v https://bitbucket.beescloud.com/'
+                                sh 'wget -v https://bitbucket.beescloud.com/'
                         }
                     } // steps
                 } // stage
@@ -48,6 +50,8 @@ pipeline {
                     steps {
                         container('jdk') {
                             sh './mvnw clean verify'
+                            sh 'curl -v https://bitbucket.beescloud.com/'
+                            sh 'wget -v https://bitbucket.beescloud.com/'
                         }
                     } // steps
                 } // stage
@@ -70,6 +74,8 @@ pipeline {
                     steps {
                         container('jdk') {
                             sh './mvnw clean verify'
+                            sh 'curl -v https://bitbucket.beescloud.com/'
+                            sh 'wget -v https://bitbucket.beescloud.com/'
                         }
                     } // steps
                 } // stage
